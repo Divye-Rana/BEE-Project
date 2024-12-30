@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Deepansh Goel",
+        "email": "Shubam@gmail.com",
+        "password": "112",
+        "date": "2024-12-10",
+        "message": "Hello, this is our backend project."
+    },
+    {
+        "name": "David Rana",
+        "email": "divye320.be@gmail.com",
+        "password": "1212",
+        "date": "2025-01-02",
+        "message": "Hello, this is our backend project."
+    },
+    {
+        "name": "Deepansh Goel",
+        "email": "Shubam2222@gmail.com",
+        "password": "122122",
+        "date": "2025-01-09",
+        "message": "Hello, this is our backend project."
+    }
+]
