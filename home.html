@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+VN+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: "Poppins", serif;
+            font-weight: 400;
+            font-style: normal;
+            background: linear-gradient(135deg, #000000, #1F1F1F);
+    color: #E0E0E0;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #nav {
+            padding: 2px 40px;
+            margin-bottom: 0px;
+            margin-top: -15px;
+            border-bottom: 1px solid #444;
+            background: linear-gradient(to right, #2C2C2C, #1A1A1A);
+            color: white;
+            border-bottom: 1px solid #444;
+            background-image: url('rrr.webp');
+            background-position: center;
+            background-size: cover;
+            
+        }
+
+        #hero {
+            display: flex;
+            margin: auto;
+            flex-direction: row;
+            height: 85%;
+            width: 95%;
+            margin-bottom: 50px;
+            background-image: url('/pzi.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 90vh;
+        }
+
+        #h-left {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #user-form {
+    background: #1A1A1A;
+    padding: 20px 25px;
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+        input, textarea, button {
+            padding: 7px;
+            margin-bottom: 15px;
+            border: 1px solid #444;
+            font-size: 18px;
+            border-radius: 5px;
+            background: #111;
+            color: white;
+        }
+
+        
+
+        button {
+    background: linear-gradient(90deg, #4F4F4F, #2C2C2C);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+
+button:hover {
+    background: white;
+    color: black;
+    border: 1px solid #2C2C2C;
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+
+        * {
+            transition: all 0.3s ease-in-out;
+        }
+
+        #h-right {
+            animation: slideInLeft 3s ease-in-out 0.5s forwards;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-700px);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        h1 {
+            animation: fadeSlideUp 1s ease-in-out 0.5s forwards;
+        }
+
+        @keyframes fadeSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h3 {
+            animation: fadeSlideUp 1s ease-in-out 0s forwards;
+        }
+
+        h3:nth-child(1) {
+            animation-delay: 0s;
+        }
+        h3:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+        h3:nth-child(3) {
+            animation-delay: 0.8s;
+        }
+
+        h2 {
+            animation: fadeSlideUp 1s ease-in-out 0s forwards;
+        }
+
+        label {
+            animation: fadeSlideUp 0.5s ease-in-out 0s forwards;
+        }
+
+        label:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        label:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        label:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        input {
+            animation: fadeSlideUp 1s ease-in-out 0.1s forwards;
+        }
+
+        input:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        input:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        textarea {
+            animation: fadeSlideUp 1s ease-in-out 0s forwards;
+        }
+
+        #btn {
+            animation: slideUp 1s ease-in-out 0s forwards;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .output {
+            max-width: 600px;
+            height: 200px;
+            margin: 20px auto;
+            color: black;
+            background: white;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #date{
+            color: #fff;
+        }
+        span{
+            color: red;
+        }
+        .custom-date {
+        color-scheme: dark;
+        padding: 5px; 
+        }
+        .custom-pass {
+        color-scheme: dark; 
+        }
+
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <h1 style="cursor: pointer; text-align: center;"><i class="ri-shield-user-line"></i></i>User Registration Form</h1>
+    </div>
+
+    <div id="hero" style=" width: 100%;">
+        <div id="h-left">
+            <div style="margin-top: 18px; margin-left: 40rem;">
+                <h2><u>Let's Get Started!</u></h2>
+            </div>
+            
+            <form id="user-form" onsubmit="submitForm(event)" style="margin-left: 38rem;">
+                <label for="name">Name<span>&nbsp;*</span></label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email<span>&nbsp;*</span></label>
+                <input type="text" id="email" name="email">
+
+                <label for="password">Enter password<span>&nbsp;*</span></label>
+                <input type="password" id="password" name="password" class="custom-pass">
+
+                <label for="date">Select date<span>&nbsp;*</span></label>
+                <input type="date" name="date" id="date" class="custom-date">
+
+
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="2"></textarea>
+
+                <div>
+                    <input type="checkbox" name="check" id="check" required>
+                    <label for="check">Agree terms & conditions<i class="ri-lock-line"></i></label>
+                </div>
+
+                <button type="submit" id="btn">Save Details</button>
+            </form>
+        </div>
+
+       
+    </div>
+
+    <script>
+        async function submitForm(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const formData = new FormData(event.target);
+
+            const response = await fetch('/submit', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    name: formData.get('name'),
+                    email: formData.get('email'),
+                    password: formData.get('password'),
+                    date: formData.get('date'),
+                    message: formData.get('message')
+                })
+            });
+
+            const result = await response.json();
+
+            if (result.message === 'User data saved successfully!') {
+                alert('Sign Up Successful!');
+                document.getElementById("user-form").reset();  // Optionally reset the form after successful sign-up
+            } else {
+                alert(result.message);
+            }
+        }
+    </script>
+</body>
+</html>
